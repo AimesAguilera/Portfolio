@@ -3,7 +3,7 @@ body {
     padding: 0;
     display: flex;
     min-height: 100vh;
-    background: linear-gradient(45deg, #333, #000);
+    background: linear-gradient(45deg,#000, #333, #666, #8FBC8F);
     font-family: Georgia;
 }
 
@@ -35,7 +35,7 @@ body {
     transition: 0.5s;
     border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0 10px 15px rgba(0,0,0,.5);
+    box-shadow: 0 10px 15px rgba(0,0,0,.6);
 }
 
 .nav input {
@@ -98,11 +98,11 @@ body {
 
 
 /* ========== PROJECTS STUFF ========== */
-.container #projects {
-    padding-left: 40px;
-    padding-right: 40px;
+#projects {
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 0;
-    width: 1000px;
+    width: 1100px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -110,11 +110,12 @@ body {
 
 .container .card {
     position: relative;
+    margin: 0;
 }
 
 .container .card .face {
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
     transition: 0.5s;
 }
 
@@ -149,17 +150,18 @@ body {
 
 .container .card .face.face2 {
     position: relative;
-    background: #fff;
+    background: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
     box-sizing: border-box;
     box-shadow: 0 15px 30px rgba(0,0,0,.5);
-    transform: translateY(-100px);
+    transform: translateY(-50px);
 }
 .container .card:hover .face.face2 {
     transform: translateY(0);
+    background: #fff;
 }
 
 .container .card .face.face2 .content p {
